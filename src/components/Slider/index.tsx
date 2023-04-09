@@ -25,7 +25,6 @@ export const Slider: FC<SliderProps> = ({ data }) => {
     if (nextSlide) {
       sliderInterval = setInterval(() => {
         setIsActiveSlide(isActiveSlide + 1);
-        console.log('rerendered');
       }, 4000);
     }
 
