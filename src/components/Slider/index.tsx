@@ -42,7 +42,7 @@ export const Slider: FC<SliderProps> = ({ data }) => {
 
     sliderContainer.current.style.transform = `translate3d(-${isActiveSlide * 260}px, 0, 0)`;
   }, [isActiveSlide]);
-
+  
   const handleNextSlide = useCallback(() => {
     setIsActiveSlide((prevState) => prevState + 1);
   }, []);
