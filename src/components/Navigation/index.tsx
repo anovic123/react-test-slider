@@ -31,7 +31,7 @@ export const Navigation: FC<NavigationProps> = ({
         <div className={s.navigationProgressBar}>
           <div
             className={s.navigationProgressBarProgress}
-            style={{ width: `${(isActiveSlide * 100) / data.length}%` }}
+            style={{ width: `${(isActiveSlide * 100) / (data.length - 1)}%` }}
           />
         </div>
         <div className={s.navigationActionsContainer}>
